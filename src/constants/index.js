@@ -1,2 +1,2 @@
 export const API_URL = "https://api.example.com";
-export const APP_NAME = "ExpoApp";
+export const APP_NAME = "Expo Starter Template";

@@ -1,22 +1,12 @@
-// src/screens/_layout.js
-import { View, StyleSheet } from 'react-native';
-import React from 'react';
+import { View, Text } from 'react-native'
+import React from 'react'
 
-const _layout = ({ children }) => {
+const _layout = () => {
   return (
-    <View style={styles.container}>
-      {children}
+    <View>
+      <Text>_layout</Text>
     </View>
-  );
+  )
 }
 
-export default _layout;
-
-const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: "8%", // Add horizontal padding
-    paddingVertical: "2%", // Add vertical padding
-   flex:1,
-    backgroundColor: 'white',
-  },
-});
+export default _layout

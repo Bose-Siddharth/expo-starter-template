@@ -5,9 +5,6 @@ import { ThemeProvider, useTheme } from './src/context/ThemeContext';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useExample } from './src/hooks/useExample';
 import { API_URL, APP_NAME } from './src/constants';
-import SelectLang from './src/screens/SelectLang';
-import AppNavigator from './src/navigation/AppNavigator';
-import _layout from './src/layout/_layout';
 
 const MainComponent = () => {
   const { currentTheme } = useTheme();
@@ -50,10 +47,7 @@ export default function App() {
     <Provider store={store}>
       <ThemeProvider>
         {/* Add Layout Here */}
-        {/* <MainComponent /> */}
-        {/* <SelectLang/> */}
-        {/* <_layout/> */}
-        <AppNavigator/>
+        <MainComponent />
       </ThemeProvider>
     </Provider>
   );
